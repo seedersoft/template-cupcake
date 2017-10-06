@@ -1,0 +1,377 @@
+/**
+ * All styles are mobile-first. Least width supported and tested is 320px.
+ */
+body {
+  font-family: 'Source Serif Pro', serif;
+  min-width: 320px;
+}
+
+.navbar {
+  padding: 0;
+}
+
+/* Logo in the navbar */
+.navbar-brand img {
+  height: 1.8rem;
+  margin: 0.4rem;
+}
+
+/* Button on the navbar */
+.nav-link.btn.btn-outline {
+  background: #ffffff;
+  color: #fe8c00;
+  border: 0.06em solid #fe8c00;
+  padding: 0.3rem;
+  transition: all 0s;
+}
+
+.nav-link.btn.btn-outline:hover, .nav-link.btn.btn-outline:active {
+  background: #fe8c00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+}
+
+header {
+  background: url('../../../assets/images/muffin.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #9ad3cc; /* fallback for when image can't be loaded */
+  height: 35rem;
+  color: #ffffff;
+  text-align: center;
+  padding: 0!important;
+  margin: 0;
+}
+
+/* Black tint for the background image */
+.header-wrapper {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+/* Large cover text */
+.proclaim {
+  font-size: 3rem;
+  line-height: 3.6rem;
+  text-shadow: 0 0.06rem #000000;
+}
+
+/* Large cover text in the header */
+header .proclaim {
+  max-width: 30rem;
+  display: inline-block;
+}
+
+/* The "Get a taste" button */
+.btn.btn-lg.btn-outline {
+  display: inline-block;
+  background: #fe8c00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-shadow: none;
+  font-size: 1.4rem;
+  color: #ffffff;
+  transition: all 0.1ms ease;
+}
+
+/* Hovering and clicking effects for the "Get a taste" button */
+.btn.btn-lg.btn-outline:hover {
+  opacity: .92;
+}
+
+.btn.btn-lg.btn-outline:active {
+  margin-top: 0.1rem;
+
+}
+
+.btn.btn-lg.btn-outline:hover .arrow {
+  padding-left: 0.3rem;
+}
+
+header .proclaim .btn {
+  width: 10rem; /* fixed width so that the arrow animation doesn't change the size of the button */
+}
+
+.story {
+  padding: 4rem 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #4a4a4a;
+  background-color: #ffffff; /* fallback */
+  background: url('../../../assets/images/story-bg.png') no-repeat top center scroll;
+  background-size: cover;
+}
+
+.story h2 {
+  color: #111111;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.story p {
+  margin: 1.5rem 0;
+}
+
+.story img {
+  width: auto;
+  max-width: 90%;
+  max-height: 20rem;
+}
+
+.story .btn {
+  width: 14rem;
+}
+
+.cta {
+  padding: 4rem 2rem;
+  background: #7cb9b2;
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.cta .inline {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.cta .btn {
+  text-align: left;
+  width: 9.8rem;
+}
+
+/* The second CTA */
+#cta2 .btn {
+  width: 13rem;
+}
+
+.menu {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.menu h2 {
+  font-size: 2.8rem;
+  color: #111111;
+  margin-bottom: 2.5rem;
+}
+
+.menu .controls {
+  line-height: 2.8rem;
+}
+
+.menu .controls .btn:hover {
+  cursor: pointer;
+}
+
+.menu .controls .btn.btn-outline {
+  background: #ffffff;
+  color: #fe8c00;
+  border: 0.06em solid #fe8c00;
+  font-weight: bold;
+}
+
+.menu .controls .btn.btn-outline.mixitup-control-active {
+  background: #fe8c00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+}
+
+.menu .items {
+  color: #4a4a4a;
+  text-align: left;
+  min-height: 30rem;
+}
+
+.menu .items .mix {
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.menu .items .mix:hover {
+  background-color: #efefef;
+}
+
+.menu .items .mix .img-col {
+  width: 4rem;
+  margin-left: 1rem;
+}
+
+.menu .items .mix img {
+  max-width: 100%;
+}
+
+.menu .items .mix h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.menu .items .mix p {
+  text-align: justify;
+  margin: 0;
+}
+
+.menu .items .mix .price {
+  color: #fe8c00;
+  font-weight: bold;
+}
+
+.reviews {
+  background: url('../../../assets/images/bread.jpg') no-repeat top center fixed;
+  background-size: cover;
+  min-height: 35em;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.reviews-wrapper .img-col img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.reviews-wrapper .text-col {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.reviews-wrapper .text-col .text-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Tweak the carousel controls a bit to suit our layout */
+.carousel-control-prev {
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+
+.carousel-control-next {
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.contact h2 {
+  font-size: 2.8rem;
+  color: #111111;
+  margin-bottom: 2.5rem;
+}
+
+.contact .row {
+  text-align: left;
+}
+
+.contact textarea {
+  min-height: 10rem; /* use a comfortable height for the message field */
+  max-height: 25rem;
+}
+
+.contact .map-col iframe {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #141414;
+  color: #cdcdcd;
+}
+
+footer .container {
+  padding: 4rem 2rem 1rem 2rem;
+}
+
+footer p {
+  /*text-align: justify;*/
+}
+
+footer a {
+  color: #e08c00;
+}
+
+footer a:hover {
+  color: #fe8c00;
+  text-decoration: none;
+}
+
+footer h6 {
+  font-weight: bold;
+}
+
+footer .container-fluid {
+  padding: 1rem;
+  background-color: #060606;
+}
+/**
+ * Sizes:
+ *
+ * mobile: 576px
+ * tablet: 768px
+ * desktop: 992px
+ * large desktop: 1200px
+ */
+
+/* Larger than mobile */
+@media (min-width: 577px) {
+  header {
+    text-align: left;
+  }
+
+  .header-wrapper {
+    padding: 6rem 0;
+  }
+
+}
+
+/* Larger than tablet */
+@media (min-width: 769px) {
+}
+
+/* Larger than small desktop */
+@media (min-width: 993px) {
+}
+
+/* Larger desktop and beyond */
+@media (min-width: 1201px) {
+}
+
+
+/* For mobile only */
+@media (max-width: 576px) {
+  .hidden-xs {
+    display: none;
+  }
+
+  header .proclaim-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .story {
+    background-image: none;
+  }
+}
+
+/* For tablet and smaller */
+@media (max-width: 768px) {
+}
+
+/* For small desktop and smaller */
+@media (max-width: 992px) {
+}
+
+/* For large desktop and smaller */
+@media (max-width: 1200px) {
+}

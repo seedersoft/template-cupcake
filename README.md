@@ -1,2 +1,2 @@
-# template-cupcake
-The Cupcake template with the goodness of Bootstrap v4.
+# The Cupcake Template
+The Cupcake Bootstrap Template: Fully responsive HTML5 template built on top of Bootstrap v4.
